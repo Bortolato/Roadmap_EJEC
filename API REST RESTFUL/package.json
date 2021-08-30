@@ -1,0 +1,14 @@
+{
+  "name": "01.Restful",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "c"
+  },
+  "author": "Bruno Bortolato",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

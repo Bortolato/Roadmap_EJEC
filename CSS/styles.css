@@ -1,0 +1,152 @@
+/* 
+Position: 
+static: todos os objetos já estão em static automaticamente
+relative
+absolute: se comporta em relação ao relative
+fixed: segue o fluxo da página, semelhante ao absolute sem parente mas nao se mexe mesmo rolando página
+sticky: é posicionado em relação ao scroll do usuário, quando chega na rolagem ela permanece em cima da página
+
+Pseudo-classes:
+
+*/
+
+
+
+* {
+    box-sizing: border-box;   
+}
+
+body{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+.box{
+    width: 80%;
+    margin: auto;
+}
+.container{
+    background-color: #333;
+    color: #eee;
+    width: 80%;  
+    margin: auto;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*  Mesma coisa que acima*/
+    padding: 20px;
+
+    /*border: 3px solid white;*/
+    border-bottom: 5px solid turquoise;
+    border-left: 8px solid turquoise;
+}
+
+.main-aside h2{
+    text-align: center;
+    color: #333;
+}
+
+.main-aside ul{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.main-aside ul a{
+    text-decoration: none;
+    color: black;
+}
+.main-aside ul a:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.main-aside ul a:visited{
+    color: red;
+}
+
+/* Formulários*/
+.main-form{
+    padding-left: 20px;
+}
+.main-form .form-group{
+    padding-bottom: 10px;
+}
+.main-form .form-group input{
+    padding: 15px;
+    width: 100%;
+}
+.main-form .form-group label{
+    display: block;
+}
+
+.button {
+    padding: 15px;
+    background-color: #333;
+    color: #eee;
+    
+    border-radius: 7px;
+}
+
+/* positions*/
+.relative{
+    position: relative;
+    border: 3px solid #333;
+    height: 500px;
+}
+
+.relative .absolute{
+    position: absolute;
+    bottom: 0;
+}
+.relative .absolute h1{
+    margin: 0;
+}
+
+/* Barra de navegação */
+#main-navbar{
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: #eee;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Fixed button*/
+.fixed-button{
+    background: #333;
+    color: #eee;
+    border-radius: 30%;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+}
+
+/* Categories */
+.categories ul{
+    list-style: none;
+
+}
+
+.categories ul li:first-child{
+    color: turquoise;
+}
+
+.categories ul li:last-child{
+    color: rgb(37, 76, 109);
+}
+
+.categories ul li:nth-child(3){
+    color: #333;
+}
+
+.categories ul li:nth-child(3){
+    color: blue;
+}
